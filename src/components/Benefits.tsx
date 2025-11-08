@@ -46,10 +46,10 @@ const Benefits = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-              Why Choose CloudConsult?
+              Why Choose eAcroCloud?
             </h2>
             <p className="text-xl text-muted-foreground mb-10 leading-relaxed">
-              We bring unparalleled expertise and a track record of successful cloud transformations across industries.
+              We deliver unparalleled expertise and a proven track record of transformative cloud solutions across industries worldwide.
             </p>
             <div className="space-y-5">
               {benefits.map((benefit, index) => (

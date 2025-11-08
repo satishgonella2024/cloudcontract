@@ -8,10 +8,10 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <Cloud className="h-8 w-8" />
-              <span className="text-xl font-bold">CloudConsult</span>
+              <span className="text-xl font-bold">eAcroCloud</span>
             </div>
             <p className="text-primary-foreground/80 mb-4">
-              Expert multi-cloud consulting services to help businesses leverage the full potential of AWS, Azure, and Google Cloud.
+              Elite multi-cloud solutions that empower businesses to harness the full potential of AWS, Azure, and Google Cloud with cutting-edge innovation.
             </p>
           </div>
           
@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-primary-foreground/80">
-          <p>&copy; 2024 CloudConsult. All rights reserved.</p>
+          <p>&copy; 2024 eAcroCloud. All rights reserved.</p>
         </div>
       </div>
     </footer>

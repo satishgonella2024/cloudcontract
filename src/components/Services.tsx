@@ -51,34 +51,41 @@ const Services = () => {
   }, []);
 
   return (
-    <section ref={ref} id="services" className="py-24 bg-secondary/50 backdrop-blur-sm">
-      <div className="container mx-auto px-4">
-        <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Our Cloud Services
+    <section ref={ref} id="services" className="py-32 bg-gradient-to-b from-secondary/30 via-background to-secondary/30 backdrop-blur-sm relative overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
+
+      <div className="container mx-auto px-4 relative z-10">
+        <div className={`text-center mb-20 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 tracking-tight">
+            Elite Cloud <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Services</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive cloud consulting across all major platforms
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            World-class multi-cloud consulting across all major platforms
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <Card 
-              key={index} 
-              className={`border-border hover:shadow-2xl hover:shadow-accent/10 transition-all duration-500 hover:-translate-y-2 group ${
+            <Card
+              key={index}
+              className={`border-border/50 bg-gradient-to-br from-card via-card to-accent/5 hover:shadow-2xl hover:shadow-accent/20 transition-all duration-500 hover:-translate-y-3 hover:border-accent/50 group relative overflow-hidden ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <CardHeader>
-                <div className="w-16 h-16 bg-gradient-to-br from-accent/20 to-accent/5 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="h-8 w-8 text-accent" />
+              {/* Gradient overlay on hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/0 via-accent/0 to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+              <CardHeader className="relative z-10">
+                <div className="w-20 h-20 bg-gradient-to-br from-accent/30 via-primary/20 to-accent/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg shadow-accent/10">
+                  <service.icon className="h-10 w-10 text-accent group-hover:text-accent-foreground transition-colors" />
                 </div>
-                <CardTitle className="text-xl group-hover:text-accent transition-colors">{service.title}</CardTitle>
+                <CardTitle className="text-2xl font-bold group-hover:text-accent transition-colors mb-3">{service.title}</CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+              <CardContent className="relative z-10">
+                <p className="text-muted-foreground leading-relaxed text-base">{service.description}</p>
               </CardContent>
             </Card>
           ))}

@@ -9,24 +9,24 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 215 25% 15%;
+    --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 15%;
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 15%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 215 85% 25%;
+    --primary: 221 83% 53%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96%;
-    --secondary-foreground: 215 25% 15%;
+    --secondary-foreground: 222 47% 11%;
 
     --muted: 210 40% 96%;
     --muted-foreground: 215 15% 45%;
 
-    --accent: 185 75% 45%;
+    --accent: 271 91% 65%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -34,15 +34,16 @@ All colors MUST be HSL.
 
     --border: 215 20% 90%;
     --input: 215 20% 90%;
-    --ring: 215 85% 25%;
+    --ring: 221 83% 53%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    /* Custom consultancy colors */
-    --hero-gradient-from: 215 85% 25%;
-    --hero-gradient-to: 185 75% 35%;
-    --cloud-blue: 210 80% 55%;
-    --tech-teal: 185 75% 45%;
+    /* Custom eAcroCloud colors - vibrant and modern */
+    --hero-gradient-from: 221 83% 53%;
+    --hero-gradient-to: 271 91% 65%;
+    --cloud-blue: 221 83% 53%;
+    --tech-purple: 271 91% 65%;
+    --accent-cyan: 189 94% 43%;
     
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);

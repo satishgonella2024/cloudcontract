@@ -58,7 +58,7 @@ const Hero = () => {
               Start Your Cloud Journey
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-2 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-7 border-2 border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/15 hover:border-accent backdrop-blur-md hover:shadow-lg transition-all hover:scale-105 font-semibold">
+            <Button size="lg" variant="outline" className="text-lg px-8 py-7 border-2 border-primary-foreground bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20 hover:border-accent backdrop-blur-md hover:shadow-lg transition-all hover:scale-105 font-semibold">
               Explore Solutions
             </Button>
           </div>

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Mail, Phone, MapPin } from "lucide-react";
+import { ArrowRight, Mail, MapPin } from "lucide-react";
 
 const CTA = () => {
   return (
@@ -33,12 +33,6 @@ const CTA = () => {
                 <Mail className="h-6 w-6" />
               </div>
               <span className="font-bold text-lg">hello@eacrocloud.com</span>
-            </div>
-            <div className="flex items-center gap-4 hover:scale-105 transition-transform cursor-pointer">
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent-foreground/20 to-accent-foreground/10 flex items-center justify-center shadow-lg">
-                <Phone className="h-6 w-6" />
-              </div>
-              <span className="font-bold text-lg">+44 20 7946 0958</span>
             </div>
             <div className="flex items-center gap-4 hover:scale-105 transition-transform cursor-pointer">
               <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent-foreground/20 to-accent-foreground/10 flex items-center justify-center shadow-lg">

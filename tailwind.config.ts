@@ -57,6 +57,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "cloud-blue": "hsl(var(--cloud-blue))",
+        "tech-teal": "hsl(var(--tech-teal))",
+      },
+      backgroundImage: {
+        "hero-gradient": "linear-gradient(135deg, hsl(var(--hero-gradient-from)), hsl(var(--hero-gradient-to)))",
       },
       borderRadius: {
         lg: "var(--radius)",

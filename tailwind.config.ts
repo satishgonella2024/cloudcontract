@@ -61,7 +61,8 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         "cloud-blue": "hsl(var(--cloud-blue))",
-        "tech-teal": "hsl(var(--tech-teal))",
+        "tech-purple": "hsl(var(--tech-purple))",
+        "accent-cyan": "hsl(var(--accent-cyan))",
       },
       backgroundImage: {
         "hero-gradient": "linear-gradient(135deg, hsl(var(--hero-gradient-from)), hsl(var(--hero-gradient-to)))",
@@ -103,6 +104,19 @@ export default {
         "pulse-glow": {
           "0%, 100%": { opacity: "1" },
           "50%": { opacity: "0.5" }
+        },
+        "shimmer": {
+          "0%": { backgroundPosition: "-200% 0" },
+          "100%": { backgroundPosition: "200% 0" }
+        },
+        "gradient-shift": {
+          "0%, 100%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" }
+        },
+        "blob": {
+          "0%, 100%": { transform: "translate(0, 0) scale(1)" },
+          "33%": { transform: "translate(30px, -50px) scale(1.1)" },
+          "66%": { transform: "translate(-20px, 20px) scale(0.9)" }
         }
       },
       animation: {
@@ -114,6 +128,9 @@ export default {
         "slide-in-right": "slide-in-right 0.6s ease-out",
         "float": "float 3s ease-in-out infinite",
         "pulse-glow": "pulse-glow 2s ease-in-out infinite",
+        "shimmer": "shimmer 3s linear infinite",
+        "gradient-shift": "gradient-shift 8s ease infinite",
+        "blob": "blob 7s ease-in-out infinite",
       },
     },
   },
